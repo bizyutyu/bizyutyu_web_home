@@ -18,14 +18,14 @@ export async function getStaticProps(){
   };
 }
 
-// SSRによるプリレンダリング（お試し。ユーザーボードなど変更が頻繁に起こる部分にSSRを使う）
-export async function getServerSideProps(context){
-  return{
-    props: {
-      // コンポーネントに渡すためのPropsが入る
-    },
-  };
-}
+// // SSRによるプリレンダリング（お試し。ユーザーボードなど変更が頻繁に起こる部分にSSRを使う）
+// export async function getServerSideProps(context){
+//   return{
+//     props: {
+//       // コンポーネントに渡すためのPropsが入る
+//     },
+//   };
+// }
 
 export default function Home({allPostsData}) {
   return (
