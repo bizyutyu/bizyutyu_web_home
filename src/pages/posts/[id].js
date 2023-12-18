@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { getAllPostIds, getPostData } from "@/lib/post";
 import Layout from "../../components/Layout";
 
