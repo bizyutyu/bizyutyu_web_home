@@ -75,7 +75,6 @@ export default function Home() {
 
     const responseData = await makeRequest(apiUrl, requestOptions);
     console.log(responseData); */}
-
  
   </Layout>
   );
