@@ -30,13 +30,11 @@ export async function getStaticProps(){
 
 export default function Home({allPostsData}) {
   return (
-  <Layout home>
+  <Layout>
     <Head><title>{siteTitle}</title></Head>
-    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-    </section>
 
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-      <h2>💬 つぶやき集</h2>
+      <h2>💬 POSTS</h2>
       <div className={styles.grid}>
         {allPostsData.map(({ id, title, date, thumbnail }) => (
         <article key={id}>

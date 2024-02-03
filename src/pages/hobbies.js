@@ -29,30 +29,11 @@ export async function getStaticProps(){
 
 export default function Home({allPostsData}) {
   return (
-  <Layout home>
+  <Layout>
     <Head><title>{siteTitle}</title></Head>
-    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-      <p>
-        私は宮崎大学の学生です。好きな言語はHaskellです。
-      </p>
-    </section>
 
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-      <h2>🗑 bizyutyuのページ</h2>
-      <div className={styles.grid}>
-        {allPostsData.map(({ id, title, date, thumbnail }) => (
-        <article key={id}>
-          <Link href={`/posts/${id}`}>
-            <img src={`${thumbnail}`} className={styles.thumbnailImage}/>
-          </Link>
-        {/* <Link href="/"> */}
-          <a className={utilStyles.boldText}>{title}</a>
-        {/* </Link> */}
-        <br />
-        <small className={utilStyles.lightText}>{date}</small>
-      </article>
-        ))}
-      </div>
+      <h2>🎮 HOBBIES</h2>
     </section>
 
 

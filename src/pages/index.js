@@ -6,13 +6,22 @@ import Link from 'next/link'
 import Layout, { siteTitle } from '@/components/Layout'
 import utilStyles from "../styles/utils.module.css";
 
+// プリレンダリング(SSG)
+export async function getStaticProps(){
+  console.log("プリレンダリング！！");
+  return {
+    props: {
+    },
+  };
+}
+
 export default function Home() {
   return (
   <Layout home>
     <Head><title>{siteTitle}</title></Head>
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
       <p>
-        宮崎大学の学生です。関数型プログラミングが好きです。(得意とは言ってない)
+        宮崎大学在学中。Haskellや形式手法が好きな普通の学生です。
       </p>
     </section>
 
@@ -20,7 +29,7 @@ export default function Home() {
       <h2>🗑 bizyutyuのページ</h2>
       <div className={styles.grid}>
         <article>
-          <Link href="/about">
+          <Link href="/about-me">
             <img src="/images/drink.png" className={styles.thumbnailImage}/>
           </Link>
           <a className={utilStyles.boldText}>ABOUT ME!</a>

@@ -1,21 +1,97 @@
 .container {
-    max-width: 1244px;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
+    max-width: 2000px;
   }
   
   .header {
     display: flex;
-    flex-direction: column;
+  }
+
+  /*ナビゲーションバー全体のCCS*/
+  .navBar{
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: rem;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  /*ナビゲーションバー内のロゴ要素（アイコンと名前）用CCS*/
+  .navLogo{
+    display: flex;
     align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    box-shadow: 4px 5px 12px rgba(0, 0, 0, 0.9);
+    transition: all 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .navLogo:hover{
+    background-color:white;
+    transform: translate(4px, 5px);
+    box-shadow: none;
+  }
+
+  /*ナビゲーションバー内のリスト要素用CCS(1)*/
+  .navList{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+    padding: 6px;
+    list-style-type: none;
   }
   
+  /*ナビゲーションバー内のリスト要素用CCS(2)*/
+  .navList li{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  /*ナビゲーションバー内のリスト要素用CCS(ホバー時)*/
+  .navBar li:hover {
+    background-color:white;
+    transform: translate(4px, 5px);
+  }
+
+  /*ナビゲーションバー内のリスト要素用CCS(3)*/
+  .navList Link{
+    display: block;
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+  }
+
+
   .headerImage {
+    display: grid;
     width: 6rem;
     height: 6rem;
+    grid-row: 1;
+    grid-column: 1;
   }
   
   .headerHomeImage {
+    display: grid;
+    width: 8rem;
+    height: 8rem;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .headerTxet {
     width: 8rem;
     height: 8rem;
   }
