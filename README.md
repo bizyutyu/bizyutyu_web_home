@@ -1,8 +1,9 @@
 ## site-nextjs
 
 Nextを使用したサイトのソースコードです。
+ゆくゆくはバックエンドの実装をして連携させたいです。
 
-閲覧は[このリンク](https://bizyu-pro.com)をクリック。
+閲覧には[このリンク](https://bizyu-pro.com)をクリック。
 
 ## npmやyarn を使った確認方法
 
